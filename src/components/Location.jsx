@@ -7,11 +7,11 @@ export default function Location() {
 
   const cards = [
     {
-      icon: MapPin, bg: 'bg-blue-50', iconColor: 'text-blue-600',
+      icon: MapPin, bg: 'bg-[#0F7B10]/5', iconColor: 'text-[#0F7B10]',
       title: 'Address',
       content: (
         <address className="not-italic text-slate-600 text-sm leading-relaxed">
-          Braintech Computer Academy<br />Y11, 30 Feet Rd, Pocket A, Block A<br />Budh Vihar Phase I, New Delhi – 110086
+          Braintech Computer Academy<br />Budh Vihar Phase I, New Delhi – 110086
         </address>
       ),
     },
@@ -20,7 +20,7 @@ export default function Location() {
       title: 'Phone',
       content: academy.phone.includes('XXXXXXXXXX')
         ? <p className="text-slate-500 text-sm italic">📞 TODO: CLIENT TO PROVIDE phone number</p>
-        : <a href={`tel:${academy.phone}`} className="text-blue-600 font-medium hover:underline">{academy.phone}</a>,
+        : <a href={`tel:${academy.phone}`} className="text-[#0F7B10] font-medium hover:underline">{academy.phone}</a>,
     },
     {
       icon: Clock, bg: 'bg-purple-50', iconColor: 'text-purple-600',
@@ -41,7 +41,7 @@ export default function Location() {
   ];
 
   return (
-    <section id="location" className="section-padding bg-gray-50" aria-labelledby="location-heading">
+    <section id="location" className="section-padding relative overflow-hidden" aria-labelledby="location-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <ScrollReveal animation="fade-up">
@@ -59,7 +59,7 @@ export default function Location() {
           <div className="lg:col-span-2 space-y-4">
             {cards.map((card, i) => (
               <ScrollReveal key={i} animation="fade-right" delay={i * 100} duration={550}>
-                <div className="card">
+                <div className="card p-5">
                   <div className="flex items-start gap-4">
                     <div className={`icon-box-lg ${card.bg} flex-shrink-0`}>
                       <card.icon size={22} className={card.iconColor} aria-hidden="true" />

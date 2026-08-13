@@ -1,5 +1,5 @@
 import { CheckCircle, ChevronRight, MapPin, Star } from 'lucide-react';
-import { galleryImages } from '../data/academyData';
+import { galleryImages, academy } from '../data/academyData';
 import ScrollReveal from './ScrollReveal';
 
 const highlights = [
@@ -13,7 +13,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white" aria-labelledby="about-heading">
+    <section id="about" className="section-padding relative overflow-hidden" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -41,17 +41,17 @@ export default function About() {
               </div>
 
               {/* Floating rating card */}
-              <div className="absolute top-4 -left-4 sm:-left-8 bg-white rounded-xl shadow-xl p-3.5 border border-gray-100 max-w-[160px]">
+              <div className="absolute top-4 -left-4 sm:-left-8 bg-white border border-gray-100 rounded-xl shadow-xl p-3.5 max-w-[160px]">
                 <div className="flex gap-0.5 mb-1">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={13} className="fill-amber-400 text-amber-400" />
                   ))}
                 </div>
                 <div className="text-xs font-bold text-slate-900">5.0 on Justdial</div>
-                <div className="text-xs text-slate-500 mt-0.5">578+ reviews</div>
+                <div className="text-xs text-slate-600 mt-0.5">578+ reviews</div>
               </div>
 
-              <div className="absolute -z-10 -bottom-4 -left-4 w-2/3 h-2/3 rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-100" aria-hidden="true" />
+              <div className="absolute -z-10 -bottom-4 -left-4 w-2/3 h-2/3 rounded-2xl bg-gradient-to-br from-[#0F7B10]/10 to-[#F8FAF7] border border-[#0F7B10]/20" aria-hidden="true" />
             </div>
           </ScrollReveal>
 
@@ -77,7 +77,7 @@ export default function About() {
               {highlights.map((point, i) => (
                 <ScrollReveal key={i} animation="fade-left" delay={i * 60} duration={500}>
                   <li className="flex items-start gap-2.5">
-                    <CheckCircle size={17} className="text-blue-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <CheckCircle size={17} className="text-[#0F7B10] flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span className="text-slate-700 text-sm">{point}</span>
                   </li>
                 </ScrollReveal>
@@ -85,9 +85,11 @@ export default function About() {
             </ul>
 
             <ScrollReveal animation="fade-up" delay={200}>
-              <div className="flex items-center gap-2 text-slate-500 text-sm mb-6 p-3 bg-slate-50 rounded-lg border border-slate-100 w-fit">
-                <MapPin size={16} className="text-blue-500 flex-shrink-0" />
-                <span>Y11, 30 Feet Rd, Pocket A, Block A, Budh Vihar Phase I</span>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8 p-4 bg-white border border-gray-100 shadow-sm rounded-xl w-fit">
+                <div>
+                  <p className="text-slate-900 text-sm font-semibold">Managed & Run by</p>
+                  <p className="text-[#0F7B10] font-bold text-lg">{academy.owner}</p>
+                </div>
               </div>
               <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
 import About from '../components/About';
 import Courses from '../components/Courses';
+import CoursePamphlets from '../components/CoursePamphlets';
 import WhyChooseUs from '../components/WhyChooseUs';
 import LearningExperience from '../components/LearningExperience';
 import Gallery from '../components/Gallery';
@@ -23,6 +24,7 @@ export default function Home() {
         <TrustBar />
         <About />
         <Courses />
+        <CoursePamphlets />
         <WhyChooseUs />
         <LearningExperience />
         <Gallery />

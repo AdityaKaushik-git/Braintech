@@ -11,7 +11,7 @@ export default function MobileCTABar() {
       {!academy.phone.includes('XXXXXXXXXX') ? (
         <a
           href={`tel:${academy.phone}`}
-          className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-colors"
+          className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-white border border-gray-200 shadow-md hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-colors"
           aria-label={`Call ${academy.phone}`}
         >
           <Phone size={16} />
@@ -20,7 +20,7 @@ export default function MobileCTABar() {
       ) : (
         <button
           onClick={handleEnquire}
-          className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-colors"
+          className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-white border border-gray-200 shadow-md hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-colors"
           aria-label="Enquire about courses"
         >
           <MessageSquare size={16} />
@@ -30,7 +30,7 @@ export default function MobileCTABar() {
 
       <button
         onClick={handleEnquire}
-        className="flex-[2] flex items-center justify-center gap-2 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-xl transition-colors"
+        className="flex-[2] flex items-center justify-center gap-2 py-2.5 bg-[#0F7B10] hover:bg-[#0d6e0e] text-white font-semibold text-sm rounded-xl transition-colors shadow-md"
         aria-label="Send course enquiry"
       >
         Enquire Now

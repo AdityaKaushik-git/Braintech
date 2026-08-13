@@ -11,6 +11,8 @@
 export const academy = {
   name: "Braintech Computer Academy",
   shortName: "Braintech",
+  owner: "Neelam Ji",
+  logo: `/images/Logo.jpeg`,
   tagline: "Build Skills. Build Confidence. Build Your Future.",
   description:
     "Braintech Computer Academy in Budh Vihar, Delhi is a trusted computer training institute offering job-oriented courses in a comfortable, AC classroom environment. With expert faculty, practical learning, and an exceptional student-satisfaction record, Braintech has earned a 5-star rating from 578+ learners.",
@@ -22,13 +24,13 @@ export const academy = {
 
   // Address — verified from Justdial schema
   address: {
-    line1: "Y11, 30 Feet Rd, Pocket A, Block A",
+    line1: "",
     area: "Budh Vihar Phase I, Budh Vihar",
     city: "New Delhi",
     pincode: "110086",
     state: "Delhi",
     country: "India",
-    full: "Y11, 30 Feet Rd, Pocket A, Block A, Budh Vihar Phase I, Budh Vihar, New Delhi, Delhi, 110086",
+    full: "Budh Vihar Phase I, Budh Vihar, New Delhi, Delhi, 110086",
   },
 
   // Geo coordinates — verified from Justdial schema
@@ -350,9 +352,9 @@ export const testimonials = [
 export const galleryImages = [
   {
     id: 1,
-    src: "https://content3.jdmagicbox.com/v2/comp/delhi/b4/011pxx11.xx11.220528132912.n2b4/catalogue/-38fyy151n3.jpg",
-    alt: "Braintech Computer Academy — Classroom",
-    caption: "Modern Computer Lab",
+    src: `/images/Institute_Student_Gallery.jpeg`,
+    alt: "Braintech Computer Academy — Student Gallery",
+    caption: "Student Learning Environment",
   },
   {
     id: 2,
@@ -364,26 +366,59 @@ export const galleryImages = [
     id: 3,
     src: "https://content3.jdmagicbox.com/v2/comp/delhi/b4/011pxx11.xx11.220528132912.n2b4/catalogue/braintech-computer-academy-budh-vihar-delhi-computer-training-institutes-oeqaxw46fu.jpg",
     alt: "Braintech Computer Academy — Learning Environment",
-    caption: "Student Learning Environment",
+    caption: "Students in Classroom",
+  }
+];
+
+export const pamphletImages = [
+  {
+    id: 1,
+    src: `/images/Course_Info.jpeg`,
+    alt: "Job Oriented Courses",
+    caption: "Job Oriented Courses",
+  },
+  {
+    id: 2,
+    src: `/images/Course_info_2.jpeg`,
+    alt: "Computer Courses List",
+    caption: "Detailed Courses",
+  },
+  {
+    id: 3,
+    src: `/images/Course_info_3.jpeg`,
+    alt: "Specialized Training",
+    caption: "Specialized Training",
   },
   {
     id: 4,
-    src: "https://content3.jdmagicbox.com/v2/comp/delhi/b4/011pxx11.xx11.220528132912.n2b4/catalogue/braintech-computer-academy-budh-vihar-delhi-computer-training-institutes-a457hx9csn.jpg",
-    alt: "Braintech Computer Academy — Computer Lab",
-    caption: "Computer Lab",
+    src: `/images/Pamphlet_1.jpeg`,
+    alt: "Academy Pamphlet 1",
+    caption: "Latest Offers",
   },
   {
     id: 5,
-    src: "https://content3.jdmagicbox.com/v2/comp/delhi/b4/011pxx11.xx11.220528132912.n2b4/catalogue/braintech-computer-academy-budh-vihar-delhi-computer-training-institutes-2atj0epz3s.jpg",
-    alt: "Braintech Computer Academy — Academy",
-    caption: "Our Academy",
+    src: `/images/Pamphlet_2.jpeg`,
+    alt: "Academy Pamphlet 2",
+    caption: "Program Details",
   },
   {
     id: 6,
-    src: "https://content3.jdmagicbox.com/v2/comp/delhi/b4/011pxx11.xx11.220528132912.n2b4/catalogue/braintech-computer-academy-budh-vihar-delhi-computer-training-institutes-9zh3m1iyxn.jpg",
-    alt: "Braintech Computer Academy — Facility",
-    caption: "Academy Facility",
+    src: `/images/Pamphlet_3.jpeg`,
+    alt: "Academy Pamphlet 3",
+    caption: "Certification",
   },
+  {
+    id: 7,
+    src: `/images/Pamphlet_4.jpeg`,
+    alt: "Academy Pamphlet 4",
+    caption: "Admission Info",
+  },
+  {
+    id: 8,
+    src: `/images/Pamphlet_5.jpeg`,
+    alt: "Academy Pamphlet 5",
+    caption: "Syllabus Overview",
+  }
 ];
 
 /**
@@ -393,6 +428,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Courses", href: "#courses" },
+  { label: "Programs", href: "#pamphlets" },
   { label: "Why Us", href: "#why-us" },
   { label: "Gallery", href: "#gallery" },
   { label: "Reviews", href: "#reviews" },

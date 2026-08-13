@@ -8,45 +8,42 @@ import ScrollReveal from './ScrollReveal';
 const iconMap = { Monitor, FileText, Calculator, Code2, Terminal, Palette, Database, Briefcase };
 
 const categoryColors = {
-  Foundation:           'bg-slate-100 text-slate-600',
-  'Office Productivity':'bg-blue-50 text-blue-600',
+  Foundation:           'bg-white border border-gray-200 shadow-md text-slate-600',
+  'Office Productivity':'bg-[#0F7B10]/5 text-[#0F7B10]',
   'Finance & Accounting':'bg-green-50 text-green-600',
   Programming:          'bg-purple-50 text-purple-600',
   Design:               'bg-pink-50 text-pink-600',
   'Office Skills':      'bg-orange-50 text-orange-600',
-  Career:               'bg-cyan-50 text-cyan-600',
+  Career:               'bg-[#A6D52C]/10 text-[#0F7B10]',
 };
 
 function CourseCard({ course, index }) {
   const Icon = iconMap[course.icon] || Monitor;
-  const categoryClass = categoryColors[course.category] || 'bg-slate-100 text-slate-600';
+  const categoryClass = categoryColors[course.category] || 'bg-white border border-gray-200 shadow-md text-slate-600';
 
   return (
-    <ScrollReveal animation="zoom-up" delay={index * 70} duration={550}>
+    <ScrollReveal animation="zoom-up" delay={index * 70} duration={550} className="h-full flex flex-col">
       <article
-        className={`card group relative flex flex-col h-full ${
-          course.featured ? 'border-blue-200 bg-gradient-to-br from-blue-50/60 to-white' : ''
+        className={`card group relative flex flex-col h-full flex-1 p-6 ${
+          course.featured ? 'border-[#0F7B10]/30 bg-gradient-to-br from-[#0F7B10]/10 to-white' : ''
         }`}
         aria-label={`Course: ${course.title}`}
       >
         {course.featured && (
-          <div className="absolute -top-3 left-4">
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full shadow-sm">
-              <Briefcase size={10} />
-              Most Popular
+          <div className="absolute -top-3 left-4 transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-[#0F7B10] text-white text-xs font-semibold rounded-full shadow-sm relative overflow-hidden">
+              <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+              <Briefcase size={10} className="relative z-10" />
+              <span className="relative z-10">Most Popular</span>
             </span>
           </div>
         )}
 
         <div className="flex items-start gap-4 mb-4">
           <div
-            className={`icon-box-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${
-              course.featured
-                ? 'bg-gradient-to-br from-blue-500 to-cyan-400'
-                : 'bg-gradient-to-br from-blue-50 to-cyan-50'
-            }`}
+            className={`icon-box-lg transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 bg-gradient-to-br from-[#0F7B10]/10 to-[#F8FAF7]`}
           >
-            <Icon size={22} className={course.featured ? 'text-white' : 'text-blue-600'} aria-hidden="true" />
+            <Icon size={22} className="text-[#0F7B10]" aria-hidden="true" />
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="font-display font-bold text-slate-900 text-base leading-tight mb-1">
@@ -58,13 +55,13 @@ function CourseCard({ course, index }) {
           </div>
         </div>
 
-        <p className="text-slate-600 text-sm leading-relaxed flex-1 mb-4">{course.shortDesc}</p>
+        <p className="text-slate-600 text-sm leading-relaxed flex-1 mb-4 transition-colors duration-300 group-hover:text-slate-800">{course.shortDesc}</p>
 
         <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-          <span className="text-xs text-slate-400 font-medium">{course.level}</span>
+          <span className="text-xs text-slate-500 font-medium">{course.level}</span>
           <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all hover:text-blue-700 group/btn"
+            className="text-[#0F7B10] text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all hover:text-[#0a520a] group/btn"
             aria-label={`Enquire about ${course.title}`}
           >
             Enquire
@@ -78,7 +75,7 @@ function CourseCard({ course, index }) {
 
 export default function Courses() {
   return (
-    <section id="courses" className="section-padding bg-gray-50" aria-labelledby="courses-heading">
+    <section id="courses" className="section-padding relative overflow-hidden" aria-labelledby="courses-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <ScrollReveal animation="fade-up">
