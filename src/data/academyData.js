@@ -12,7 +12,7 @@ export const academy = {
   name: "Braintech Computer Academy",
   shortName: "Braintech",
   owner: "Neelam Ji",
-  logo: `/images/Logo.jpeg`,
+  logo: `/Braintech/images/Logo.jpeg`,
   tagline: "Build Skills. Build Confidence. Build Your Future.",
   description:
     "Braintech Computer Academy in Budh Vihar, Delhi is a trusted computer training institute offering job-oriented courses in a comfortable, AC classroom environment. With expert faculty, practical learning, and an exceptional student-satisfaction record, Braintech has earned a 5-star rating from 578+ learners.",
@@ -352,7 +352,7 @@ export const testimonials = [
 export const galleryImages = [
   {
     id: 1,
-    src: `/images/Institute_Student_Gallery.jpeg`,
+    src: `/Braintech/images/Institute_Student_Gallery.jpeg`,
     alt: "Braintech Computer Academy — Student Gallery",
     caption: "Student Learning Environment",
   },
@@ -373,49 +373,49 @@ export const galleryImages = [
 export const pamphletImages = [
   {
     id: 1,
-    src: `/images/Course_Info.jpeg`,
+    src: `/Braintech/images/Course_Info.jpeg`,
     alt: "Job Oriented Courses",
     caption: "Job Oriented Courses",
   },
   {
     id: 2,
-    src: `/images/Course_info_2.jpeg`,
+    src: `/Braintech/images/Course_info_2.jpeg`,
     alt: "Computer Courses List",
     caption: "Detailed Courses",
   },
   {
     id: 3,
-    src: `/images/Course_info_3.jpeg`,
+    src: `/Braintech/images/Course_info_3.jpeg`,
     alt: "Specialized Training",
     caption: "Specialized Training",
   },
   {
     id: 4,
-    src: `/images/Pamphlet_1.jpeg`,
+    src: `/Braintech/images/Pamphlet_1.jpeg`,
     alt: "Academy Pamphlet 1",
     caption: "Latest Offers",
   },
   {
     id: 5,
-    src: `/images/Pamphlet_2.jpeg`,
+    src: `/Braintech/images/Pamphlet_2.jpeg`,
     alt: "Academy Pamphlet 2",
     caption: "Program Details",
   },
   {
     id: 6,
-    src: `/images/Pamphlet_3.jpeg`,
+    src: `/Braintech/images/Pamphlet_3.jpeg`,
     alt: "Academy Pamphlet 3",
     caption: "Certification",
   },
   {
     id: 7,
-    src: `/images/Pamphlet_4.jpeg`,
+    src: `/Braintech/images/Pamphlet_4.jpeg`,
     alt: "Academy Pamphlet 4",
     caption: "Admission Info",
   },
   {
     id: 8,
-    src: `/images/Pamphlet_5.jpeg`,
+    src: `/Braintech/images/Pamphlet_5.jpeg`,
     alt: "Academy Pamphlet 5",
     caption: "Syllabus Overview",
   }
