@@ -11,7 +11,7 @@
 export const academy = {
   name: "Braintech Computer Academy",
   shortName: "Braintech",
-  owner: "Neelam Ji",
+  owner: "Neelamji",
   logo: `/Braintech/images/Logo.jpeg`,
   tagline: "Build Skills. Build Confidence. Build Your Future.",
   description:
