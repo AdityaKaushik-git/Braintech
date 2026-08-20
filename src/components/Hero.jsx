@@ -148,7 +148,7 @@ export default function Hero() {
               {/* Main image */}
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/10 animate-float">
                 <img
-                  src="/Braintech/images/Institute_Front_Face.jpeg"
+                  src="/images/Institute_Front_Face.jpeg"
                   alt="Braintech Computer Academy — Computer Lab, Budh Vihar Delhi"
                   className="w-full h-72 sm:h-96 object-cover"
                   loading="eager"

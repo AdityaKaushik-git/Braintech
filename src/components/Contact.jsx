@@ -58,9 +58,7 @@ export default function Contact() {
     setSubmitError('');
 
     try {
-      // NOTE: Replace this dummy key with your actual Web3Forms Access Key
-      // You can get one for free at https://web3forms.com/
-      const access_key = "30577049-89a7-4ffa-b74a-823ee35eab3c";
+      const access_key = "76200d2f-522f-4ce0-94fb-18a91f6c55e8";
       
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
