@@ -118,6 +118,10 @@ export default function Footer() {
             <span className="text-gray-300 font-semibold">Aditya Kaushik(Arknex)</span>
           </div>
         </div>
+        {/* AEO: Machine-readable NAP for entity disambiguation */}
+        <p className="sr-only">
+          Braintech Computer Academy, Gulab Park, Budh Vihar Phase I, New Delhi, Delhi 110086, India. Phone: +91-7888911078. Open Monday to Saturday 8:00 AM to 8:00 PM.
+        </p>
       </div>
     </footer>
   );

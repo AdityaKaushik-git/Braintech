@@ -449,19 +449,24 @@ export const mapConfig = {
  * SEO Configuration
  */
 export const seoConfig = {
-  title: "Braintech Computer Academy | Computer Courses in Budh Vihar, Delhi",
+  title: "Braintech Computer Academy | #1 Computer Training Institute in Budh Vihar, Delhi",
   description:
-    "Braintech Computer Academy in Budh Vihar, Delhi. Expert computer training with AC classrooms, job placement assistance, and 5-star rated faculty. Enroll now in computer courses near Rohini, Delhi.",
+    "Top-rated computer institute in Budh Vihar, Delhi. Expert training in MS Office, Tally, Web Dev & more. AC classrooms, job placement support. 5.0★ · 578+ reviews.",
+  canonicalUrl: "https://braintechacademy.com",
   keywords: [
     "computer institute in Budh Vihar",
-    "computer classes in Budh Vihar",
+    "computer classes in Budh Vihar Delhi",
     "computer training institute Delhi",
-    "coding classes Budh Vihar",
-    "Braintech Computer Academy",
-    "computer courses near Budh Vihar",
-    "computer institute Rohini Delhi",
-    "computer coaching Budh Vihar",
+    "Tally course Budh Vihar",
+    "MS Office course Delhi",
+    "web development course Budh Vihar",
+    "computer institute near Rohini",
     "job oriented computer courses Delhi",
+    "Braintech Computer Academy",
+    "best computer coaching Budh Vihar",
+    "data entry typing course Delhi",
+    "DTP graphic design course Delhi",
+    "programming course C C++ Python Delhi",
+    "computer institute near me Budh Vihar",
   ],
-  canonicalUrl: "https://www.braintechacademy.in", // TODO: CLIENT TO PROVIDE actual domain
 };
